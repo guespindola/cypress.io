@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Atividade com Cypress</title>
+  </head>
+  <body>
+
+    <span class="success">
+      <strong>Mensagem enviada com sucesso.</strong>
+    </span>
+    <span class="error">
+      <strong>Valide os campos obrigatórios!</strong>
+    </span>
+    <div id="white-background">
+      <div>
+        <p id="title"> <b> Atividade com Formulário E Cypress </b></p>
+        <p id="subtitle">Efetue testes de validação dos campos Com cypress</p>
+        <br />
+      </div>
+      <span id="cat">🐈</span>
+      <form>
+        <fieldset class="group">
+          <div class="field">
+            <label for="date"><strong>Date:</strong>
+            <input style="display: block; border: 1px solid #969696; height: 30px; width: 53vh;" type="date" name="date" id="date" required />
+          </div>
+          <div class="field">
+            <label for="dateTime"><strong>Date Time:</strong>
+            <input style="display: block; border: 1px solid #969696; height: 30px; width: 53vh;" type="datetime" name="dateTimee" id="dateTime" required />
+          </div>
+        </fieldset>
+        <fieldset class="group">
+          <div class="field">
+            <div class="field">
+            <label for="datePlace"><strong>Date with placeholder:</strong>
+            <input style="width: 106vh;" type="text" name="datePlace" id="datePlace" placeholder="12/03/1998" required />
+          </div>
+          <div class="field2">
+            <label for="phone"><strong>Phone:</strong>
+            <input style="width: 106vh;" type="number" name="phone" id="phone" required />
+          </div>
+          <div class="field2">
+            <label for="currency"><strong>Currency:</strong>
+            <input style="width: 106vh;" type="number" name="currency" id="currency" placeholder="$ 0.0" required />
+          </div>
+          </div>
+        </fieldset>
+        <fieldset class="group">
+          <div class="field">
+            <label for="email"><strong>Email:</strong>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="field">
+            <label for="ip"><strong>Ip:</strong>
+            <input type="number" name="ip" id="ip" />
+          </div>
+        </fieldset>
+      
+        <button type="submit" class="button">Enviar</button>
+
+      </form>
+    </div>
+  </body>
+</html>
